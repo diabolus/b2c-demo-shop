@@ -167,7 +167,8 @@
     "spryker/urls-rest-api": "^1.0.1",
     "spryker/uuid": "^1.0",
     "spryker/wishlists-rest-api": "^1.4.1",
-    "swiftmailer/swiftmailer": "^5.4.12"
+    "swiftmailer/swiftmailer": "^5.4.12",
+    "symfony/error-handler": "4.4.9"
   },
   "require-dev": {
     "codeception/codeception": "^2.3.8",
@@ -233,6 +234,13 @@
       "echo '<?php return \"development-heroku\";' > config/Shared/console_env_local.php",
       "./deploy/heroku/run.sh"
     ],
+    "qa-deploy": [
+      "Composer\\Config::disableProcessTimeout",
+      "deploy/scripts/local_prebuild.sh aws",
+      "vendor/dept/deinebaustoffe-aws-deployment/aws_deploy.sh aws-yves-qa",
+      "vendor/dept/deinebaustoffe-aws-deployment/aws_deploy.sh aws-zed-qa"
+    ],
+
     "post-install-cmd": [
       "PhantomInstaller\\Installer::installPhantomJS"
     ],
