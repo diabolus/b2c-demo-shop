@@ -2,12 +2,7 @@
   "name": "spryker-shop/b2c-demo-shop",
   "description": "Spryker B2C Demo Shop",
   "license": "proprietary",
-  "repositories": [
-    {
-      "type": "vcs",
-      "url": "git@gitlab.sr-system.de:deinebaustoffe/aws-deployment.git"
-    }
-  ],
+  "repositories": [],
   "require": {
     "php": ">=7.2",
     "ext-bcmath": "*",
