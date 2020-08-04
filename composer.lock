@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "4611f8b506c4112949491c9f0d8422ec",
+    "content-hash": "28cf461390a5beb095ba734f93d04599",
     "packages": [
         {
             "name": "brick/math",
@@ -195,6 +195,107 @@
                 "symmetric key cryptography"
             ],
             "time": "2018-07-24T23:27:56+00:00"
+        },
+        {
+            "name": "dept-spryker/feed-export",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "git@gitlab.sr-system.de:spryker-bundles/feed-export.git",
+                "reference": "784764a75529dfb891f92c9256ba02e5b1e25c42"
+            },
+            "require": {
+                "spryker/kernel": "^3.31",
+                "spryker/log": "^3.6.0",
+                "spryker/transfer": "^3.7"
+            },
+            "require-dev": {
+                "codeception/codeception": "~2.3",
+                "phpmd/phpmd": "@stable",
+                "phpstan/phpstan": "^0.11.1",
+                "phpunit/phpunit": "^6.4",
+                "spryker/architecture-sniffer": "*",
+                "spryker/code-sniffer": "*",
+                "squizlabs/php_codesniffer": "^3.1",
+                "superreal/codeception-transfer-helper": "dev-master"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "DeptSpryker\\": "src/DeptSpryker/"
+                }
+            },
+            "autoload-dev": {
+                "psr-4": {
+                    "DeptSprykerTest\\": "tests/"
+                },
+                "psr-0": {
+                    "": "tests/_generated/src"
+                }
+            },
+            "license": [
+                "proprietary"
+            ],
+            "authors": [
+                {
+                    "name": "Sebastian Kueck",
+                    "email": "sebastian.kueck@deptagency.com"
+                }
+            ],
+            "description": "Feed Export Module",
+            "time": "2019-04-08T09:36:21+00:00"
+        },
+        {
+            "name": "dept-spryker/product-feed-export",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "git@gitlab.sr-system.de:spryker-bundles/product-feed-export.git",
+                "reference": "c20eceec8ba15b562d09b729476304e98de395d0"
+            },
+            "require": {
+                "dept-spryker/feed-export": "dev-master",
+                "spryker/kernel": "^3.31",
+                "spryker/locale": "^3.1",
+                "spryker/product": "^6.7",
+                "spryker/transfer": "^3.7"
+            },
+            "require-dev": {
+                "codeception/codeception": "~2.3",
+                "phpmd/phpmd": "@stable",
+                "phpstan/phpstan": "^0.11.1",
+                "phpunit/phpunit": "^6.4",
+                "spryker/architecture-sniffer": "*",
+                "spryker/code-sniffer": "*",
+                "squizlabs/php_codesniffer": "^3.1",
+                "superreal/codeception-propel-helper": "dev-master",
+                "superreal/codeception-transfer-helper": "dev-master"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "DeptSpryker\\": "src/DeptSpryker/"
+                }
+            },
+            "autoload-dev": {
+                "psr-4": {
+                    "DeptSprykerTest\\": "tests/"
+                },
+                "psr-0": {
+                    "": "tests/_generated/src"
+                }
+            },
+            "license": [
+                "proprietary"
+            ],
+            "authors": [
+                {
+                    "name": "Sebastian Kueck",
+                    "email": "sebastian.kueck@deptagency.com"
+                }
+            ],
+            "description": "Product Feed Export Plugin",
+            "time": "2019-03-19T16:34:13+00:00"
         },
         {
             "name": "doctrine/inflector",
@@ -15493,16 +15594,16 @@
         },
         {
             "name": "spryker/data-export",
-            "version": "0.1.0",
+            "version": "0.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/spryker/data-export.git",
-                "reference": "612e56b7c7c171d0f85ad88b798bb83521b3dac4"
+                "reference": "9656815dda3a1f1d3c912e014da26af1336a8009"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/spryker/data-export/zipball/612e56b7c7c171d0f85ad88b798bb83521b3dac4",
-                "reference": "612e56b7c7c171d0f85ad88b798bb83521b3dac4",
+                "url": "https://api.github.com/repos/spryker/data-export/zipball/9656815dda3a1f1d3c912e014da26af1336a8009",
+                "reference": "9656815dda3a1f1d3c912e014da26af1336a8009",
                 "shasum": ""
             },
             "require": {
@@ -15534,7 +15635,7 @@
                 "proprietary"
             ],
             "description": "DataExport module",
-            "time": "2020-05-15T10:02:44+00:00"
+            "time": "2020-07-14T08:11:00+00:00"
         },
         {
             "name": "spryker/data-export-extension",
@@ -25139,16 +25240,16 @@
         },
         {
             "name": "spryker/sales-data-export",
-            "version": "0.1.0",
+            "version": "0.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/spryker/sales-data-export.git",
-                "reference": "f64be25ab014b361be0f430b5f3f6b6c966fdef7"
+                "reference": "9f6a68b15077166b76580dbd7010ae0376a6c180"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/spryker/sales-data-export/zipball/f64be25ab014b361be0f430b5f3f6b6c966fdef7",
-                "reference": "f64be25ab014b361be0f430b5f3f6b6c966fdef7",
+                "url": "https://api.github.com/repos/spryker/sales-data-export/zipball/9f6a68b15077166b76580dbd7010ae0376a6c180",
+                "reference": "9f6a68b15077166b76580dbd7010ae0376a6c180",
                 "shasum": ""
             },
             "require": {
@@ -25158,9 +25259,10 @@
                 "spryker/data-export-extension": "^0.1.0",
                 "spryker/kernel": "^3.30.0",
                 "spryker/locale": "^3.0.0",
-                "spryker/oms": "^1.0.0 || ^2.0.0 || ^3.0.0 || ^4.0.0 || ^5.0.0 || ^6.0.0 || ^7.0.0 || ^8.0.0 || ^10.0.0 || ^11.0.0",
+                "spryker/oms": "^11.0.0",
                 "spryker/propel-orm": "^1.0.0",
-                "spryker/sales": "^8.0.0 || ^10.0.0 || ^11.0.0",
+                "spryker/sales": "^11.0.0",
+                "spryker/sales-oms": "^0.1.0",
                 "spryker/shipment": "^7.0.0 || ^8.0.0",
                 "spryker/transfer": "^3.8.0",
                 "spryker/util-encoding": "^1.0.0 || ^2.0.0"
@@ -25186,7 +25288,7 @@
                 "proprietary"
             ],
             "description": "SalesDataExport module",
-            "time": "2020-05-15T11:17:53+00:00"
+            "time": "2020-07-08T08:39:39+00:00"
         },
         {
             "name": "spryker/sales-extension",
@@ -25225,6 +25327,52 @@
             ],
             "description": "SalesExtension module",
             "time": "2020-04-23T10:38:06+00:00"
+        },
+        {
+            "name": "spryker/sales-oms",
+            "version": "0.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/spryker/sales-oms.git",
+                "reference": "df4e1eab5ed751205f3b56115748f3a951c18ed9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/spryker/sales-oms/zipball/df4e1eab5ed751205f3b56115748f3a951c18ed9",
+                "reference": "df4e1eab5ed751205f3b56115748f3a951c18ed9",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.2",
+                "spryker/kernel": "^3.33.0",
+                "spryker/oms": "^11.0.0",
+                "spryker/sales": "^11.0.0",
+                "spryker/sales-extension": "^1.1.0",
+                "spryker/symfony": "^3.0.0",
+                "spryker/util-data-reader": "^1.0.0"
+            },
+            "require-dev": {
+                "spryker/code-sniffer": "*",
+                "spryker/propel": "*",
+                "spryker/testify": "*"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Spryker\\": "src/Spryker/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "proprietary"
+            ],
+            "description": "SalesOms module",
+            "time": "2020-05-29T12:33:32+00:00"
         },
         {
             "name": "spryker/sales-order-threshold",
@@ -38168,7 +38316,9 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": [],
+    "stability-flags": {
+        "dept-spryker/product-feed-export": 20
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {

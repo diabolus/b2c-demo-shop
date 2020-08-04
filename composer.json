@@ -2,7 +2,20 @@
   "name": "spryker-shop/b2c-demo-shop",
   "description": "Spryker B2C Demo Shop",
   "license": "proprietary",
-  "repositories": [],
+  "repositories": [
+    {
+      "type": "vcs",
+      "url": "git@gitlab.sr-system.de:deinebaustoffe/aws-deployment.git"
+    },
+    {
+      "type": "vcs",
+      "url": "git@gitlab.sr-system.de:spryker-bundles/feed-export.git"
+    },
+    {
+      "type": "vcs",
+      "url": "git@gitlab.sr-system.de:spryker-bundles/product-feed-export.git"
+    }
+  ],
   "require": {
     "php": ">=7.2",
     "ext-bcmath": "*",
@@ -15,6 +28,7 @@
     "ext-pgsql": "*",
     "ext-readline": "*",
     "ext-redis": "*",
+    "dept-spryker/product-feed-export": "dev-master",
     "spryker-eco/loggly": "^0.1.0",
     "spryker-feature/agent-assist": "^202001.0",
     "spryker-feature/alternative-products": "^202001.0",
@@ -155,7 +169,7 @@
     "spryker/quote": "^2.12.0",
     "spryker/related-products-rest-api": "^1.1.0",
     "spryker/rest-request-validator": "^1.1.0",
-    "spryker/sales-data-export": "~0.1.0",
+    "spryker/sales-data-export": "~0.2.0",
     "spryker/sales-product-connector": "^1.1.5",
     "spryker/sales-statistics": "^1.1.7",
     "spryker/scheduler-jenkins": "^1.0.0",
